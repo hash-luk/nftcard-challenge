@@ -26,6 +26,11 @@ a {
     color: white;
     text-decoration: none;
     font-weight: 300;
+    transition: all ease;
+}
+
+a:hover {
+    color: var(--cyan);
 }
 
 h3 {
@@ -171,6 +176,7 @@ body {
     
     .hoverEffect:hover {
         opacity: 1;
+        cursor: pointer;
     }
 
     .imageStyles {
