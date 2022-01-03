@@ -26,11 +26,6 @@ a {
     color: white;
     text-decoration: none;
     font-weight: 300;
-    transition: all ease;
-}
-
-a:hover {
-    color: var(--cyan);
 }
 
 h3 {
@@ -60,7 +55,7 @@ body {
         align-items: left;
         justify-content: space-between;
         border-radius: 25px;
-        box-shadow: 0px 10px var(--veryDarkBlueLine);
+        box-shadow: 0px 10px var(--veryDarkBlueCardBG);
     }
 
     .additional-information {
@@ -141,7 +136,7 @@ body {
 
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (min-width: 1440px) {
     #card {
         position: relative;
         margin: 100px auto;
@@ -153,7 +148,7 @@ body {
         align-items: left;
         justify-content: space-between;
         border-radius: 25px;
-        box-shadow: 0px 10px var(--veryDarkBlueLine);
+        box-shadow: 0px 10px var(--veryDarkBlueCardBG);
     }
 
     #card>img{
@@ -176,7 +171,6 @@ body {
     
     .hoverEffect:hover {
         opacity: 1;
-        cursor: pointer;
     }
 
     .imageStyles {
@@ -282,7 +276,7 @@ body {
         align-items: left;
         justify-content: space-between;
         border-radius: 25px;
-        box-shadow: 0px 10px var(--veryDarkBlueLine);
+        box-shadow: 0px 10px var(--veryDarkBlueCardBG);
     }
 }
 
@@ -298,6 +292,6 @@ body {
         align-items: left;
         justify-content: space-between;
         border-radius: 25px;
-        box-shadow: 0px 10px var(--veryDarkBlueLine);
+        box-shadow: 0px 10px var(--veryDarkBlueCardBG);
     }
 }
