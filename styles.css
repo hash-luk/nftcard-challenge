@@ -1,0 +1,139 @@
+:root {
+    --softBlue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --veryDarkBlueBG: hsl(217, 54%, 11%);
+    --veryDarkBlueCardBG: hsl(216, 50%, 16%);
+    --veryDarkBlueLine: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+p {
+    color: var(--softBlue);
+    font-size: 18px;
+    font-weight: 300;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+h3 {
+    color: var(--white);
+    font-weight: 500;
+}
+
+body {
+    background-color: var(--veryDarkBlueBG);
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (min-width: 375px) {
+    #card {
+        position: relative;
+        margin: 100px auto;
+        width: 90vw;
+        height: 550px;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: space-evenly;
+        border-radius: 25px;
+        box-shadow: 0px 10px var(--veryDarkBlueCardBG);
+    }
+
+    #card>img{
+        width: 100%;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    }
+
+    .additional-information {
+        width: 100%;
+        height: 20px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #time,#credits,#information {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #information { 
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        width: 50%;
+        height: 20px;
+    }
+
+    #information>img{
+        margin: 0px 10px 0px 0px;
+    }
+
+    #information p {
+        color: var(--cyan);
+    }
+
+    #credits {
+        width: 100%;
+        height: 60px;
+        justify-content: left;
+    }
+
+    #credits p {
+        font-size: 16px;
+    }
+
+    #credits>img {
+        width: 30px;
+        height: 30px; 
+        border: 1px solid var(--white);
+        border-radius: 100px;
+        margin-right: 10px;   
+    }
+
+    #time {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        width: 50%;
+        height: 20px;
+    }
+
+    #time>img{
+        margin: 0px 10px 0px 0px;
+    }
+
+    .line {
+        width: 100%;
+        height: 1px;
+        background-color: var(--veryDarkBlueLine);
+    }
+
+    footer {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
